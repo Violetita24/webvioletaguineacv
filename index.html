@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,17 +18,13 @@
     <div class="cover-desc" id="cover-desc"></div>
 
     <div class="cover-cta">
-      <!-- AHORA VA A about.html -->
       <a class="btn" href="about.html">
-  <span class="btn-slide">Perfil</span>
-</a>
-
-
+        <span class="btn-slide">Perfil</span>
+      </a>
     </div>
-
-  
   </div>
 </main>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const el = document.getElementById("cover-desc");
@@ -42,7 +37,7 @@
       if (i < text.length) {
         el.textContent += text.charAt(i);
         i++;
-        setTimeout(type, 30); // velocidad de tecleo (ms). Baja este número para que vaya más rápido
+        setTimeout(type, 30);
       }
     }
 
@@ -52,58 +47,3 @@
 
 </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Violeta Guinea · Portfolio CV</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<main class="cover">
-  <div class="cover-inner">
-    <div class="cover-top">PORTFOLIO CV</div>
-
-    <div class="cover-name">VIOLETA<br>GUINEA</div>
-    <div class="cover-sub u-uppercase">Estudiante de desarrollo de aplicaciones web</div>
-
-    <div class="cover-desc" id="cover-desc"></div>
-
-    <div class="cover-cta">
-      <!-- AHORA VA A about.html -->
-      <a class="btn" href="about.html">
-  <span class="btn-slide">Perfil</span>
-</a>
-
-
-    </div>
-
-  
-  </div>
-</main>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const el = document.getElementById("cover-desc");
-
-    const text = "Busco una empresa donde realizar mis prácticas de FCT, aportar como desarrolladora junior y seguir aprendiendo en proyectos reales. Abierta a modalidad presencial o híbrida.";
-
-    let i = 0;
-
-    function type() {
-      if (i < text.length) {
-        el.textContent += text.charAt(i);
-        i++;
-        setTimeout(type, 30); // velocidad de tecleo (ms). Baja este número para que vaya más rápido
-      }
-    }
-
-    type();
-  });
-</script>
-
-</body>
-</html>
-
