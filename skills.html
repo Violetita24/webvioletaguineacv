@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -101,3 +102,108 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Violeta Guinea · Skills</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <header class="app-header" role="banner">
+    <div class="app-header-inner">
+      <div class="app-header-title">PERFIL · PORTFOLIO CV</div>
+      <div class="app-header-sub">VIOLETA</div>
+    </div>
+  </header>
+
+  <!-- BARRA: BANNER + ICONO + MENÚ SUPERPUESTO -->
+  <div class="top-strip">
+    <!-- Banner de bombillas de fondo -->
+    <div class="icon-strip"></div>
+
+    <!-- Menú superpuesto encima del banner -->
+    <nav class="top-nav" aria-label="Navegación de secciones">
+      <button class="top-toggle" type="button">
+        <span class="top-toggle-icon">﹢</span>
+      </button>
+
+      <div class="top-panel">
+        <!-- En ABOUT: "Quién soy" es la activa -->
+        <a class="side-item" href="about.html"><span class="side-label">Quién soy</span></a>
+        <a class="side-item active" href="skills.html"><span class="side-label">Skills</span></a>
+        <a class="side-item" href="formacion.html"><span class="side-label">Formación</span></a>
+        <a class="side-item" href="experiencia.html"><span class="side-label">Experiencia</span></a>
+        <a class="side-item" href="contacto.html"><span class="side-label">Contacto</span></a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="container" role="main">
+
+    <!-- Volver a portada flotando -->
+    <a href="home.html" class="back-floating">← Volver a portada</a>
+
+    <!-- CONTENIDO -->
+    <section class="content">
+
+      <!-- BLOQUE SUPERIOR PERFIL -->
+      <article class="card profile-top" aria-labelledby="perfilTitle">
+        <div class="profile-meta">
+          <div class="profile-name" id="perfilTitle">Violeta Guinea</div>
+          <div class="profile-role muted">Desarrollo de Aplicaciones Web · Estudiante de 2º DAW</div>
+          <div style="height:8px"></div>
+          <div class="text">
+            Soy estudiante de <strong>Desarrollo de Aplicaciones Web</strong>, con
+            conocimientos en HTML, CSS, JavaScript (frontend) y PHP/Java y bases de datos (backend).
+            Me gusta el código bien estructurado y el diseño pensado para el usuario.
+          </div>
+        </div>
+      </article>
+
+      <!-- SKILLS -->
+      <article class="card section" id="sec-skills">
+        <div class="section-title">Skills</div>
+        <div class="text">
+          <p>Estas son algunas de las tecnologías y herramientas que manejo:</p>
+
+          <div class="pill-row">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">Flexbox / Grid</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">PHP</span>
+            <span class="pill">Java</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">Oracle</span>
+            <span class="pill">Git / GitHub</span>
+          </div>
+
+          <p style="margin-top:10px">
+            Además: organización, trabajo en equipo, interés por buenas prácticas y testing básico.
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>Violeta Guinea · Portfolio CV</div>
+    <div class="muted">Diseñado en HTML, CSS &amp; JavaScript</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
+
