@@ -97,6 +97,18 @@
     <div class="muted">Diseñado en HTML, CSS &amp; JavaScript</div>
   </footer>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".top-toggle");
+    const panel = document.querySelector(".top-panel");
+
+    if (toggle && panel) {
+      toggle.addEventListener("click", function () {
+        panel.classList.toggle("is-open");
+      });
+    }
+  });
+</script>
 
 </body>
 </html>

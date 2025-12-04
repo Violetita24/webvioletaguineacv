@@ -302,7 +302,7 @@ a{color:inherit;text-decoration:none}
   opacity:1;
 }
 
-/* Panel con los enlaces, horizontal, encima del banner */
+/* Panel con los enlaces, horizontal, encima del banner version escritorio */
 .top-panel{
   display:flex;
   align-items:center;
@@ -315,12 +315,64 @@ a{color:inherit;text-decoration:none}
   transition:opacity 0.25s ease, transform 0.25s ease;
 }
 
-/* Cuando pasas el cursor por la barra, se muestra el menú */
+/* Cuando pasas el cursor por la barra, se muestra el menú (solo escritorio) */
 .top-nav:hover .top-panel{
   opacity:1;
   pointer-events:auto;
   transform:translateX(0);
 }
+@media (max-width: 768px) {
+
+  .top-strip {
+    position: relative;
+    padding: 8px 16px;
+  }
+
+  /* Botón visible en móvil */
+  .top-toggle {
+    position: relative;
+    z-index: 1001;
+    font-size: 1.8rem;
+  }
+
+  /* Panel oculto por defecto en móvil */
+  .top-panel {
+    position: fixed;
+    inset: 0;              /* top:0; right:0; bottom:0; left:0; */
+    background: #111;      /* color de fondo del menú */
+    display: flex;
+    flex-direction: column;
+    padding: 80px 24px 24px;
+    gap: 16px;
+
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+    margin-left: 0;        /* ya no hace falta el margen horizontal */
+  }
+
+  /* Cuando está abierto (clase is-open desde JS) */
+  .top-panel.is-open {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Enlaces ocupan todo el ancho y son fáciles de pulsar */
+  .side-item {
+    display: block;
+    padding: 12px 0;
+    font-size: 1.1rem;
+  }
+
+  /* En móvil ya no dependemos del :hover para mostrar el panel */
+  .top-nav:hover .top-panel{
+    /* vacío para que no afecte en táctiles */
+  }
+}
+
 
 /* Animación del banner (bombillas moviéndose a la derecha) */
 @keyframes scrollIcons{
@@ -599,4 +651,10 @@ a{color:inherit;text-decoration:none}
   0%   { opacity:0.9; transform:scale(1); }
   80%  { opacity:0.3; transform:scale(2); }
   100% { opacity:0; transform:scale(3); }
+}
+@media (max-width: 768px) {
+  .cover::after{
+    font-size: 120vw;   /* Mucho más grande para móviles */
+    opacity: 0.08;      /* Un pelín más visible (opcional) */
+  }
 }
