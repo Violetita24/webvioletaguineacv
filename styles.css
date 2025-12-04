@@ -658,3 +658,16 @@ a{color:inherit;text-decoration:none}
     opacity: 0.08;      /* Un pelín más visible (opcional) */
   }
 }
+@media (max-width: 768px) {
+  .back-floating {
+    position: static;          /* deja de estar flotando */
+    display: block;
+    text-align: right;
+    margin: 8px 16px 0 16px;   /* pequeño margen interior */
+    z-index: 1;                /* ya no necesita estar por encima de todo */
+  }
+
+  .container {
+    padding-top: 8px;          /* un poco de aire debajo de la barra */
+  }
+}
