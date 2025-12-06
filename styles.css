@@ -46,10 +46,10 @@ a{color:inherit;text-decoration:none}
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
-  font-family:"Poppins", sans-serif; /* fina y elegante */
+  font-family:"Poppins", sans-serif; /* fina */
   font-weight:200;                   /* muy ligera */
   font-size:50vw;                    /* ocupa toda la pantalla */
-  color:#661414;                     /* tu tono vino */
+  color:#661414;                     /* color vino */
   opacity:0.06;                      /* translúcida */
   pointer-events:none;               /* no molesta */
   z-index:0;                         /* detrás de todo */
@@ -76,12 +76,12 @@ a{color:inherit;text-decoration:none}
   color:var(--muted);
 }
 
-/* NOMBRE súper fino solo con Poppins */
+/* NOMBRE súper fino con Poppins */
 .cover-name{
   font-family: "Poppins","Space Grotesk",system-ui,sans-serif;
   font-weight:200;                     /* muy fina */
   font-size:clamp(3rem,8vw,4.6rem);
-  letter-spacing:.4em;                 /* mucho espaciado estilo retro */
+  letter-spacing:.4em;                 /* mucho espaciado */
   text-transform:uppercase;
   color:var(--gold);
   line-height:1.1;
@@ -128,7 +128,7 @@ a{color:inherit;text-decoration:none}
              box-shadow var(--transition);
   font-weight:600;
   position:relative;
-  overflow:hidden;            /* Necesario para animar el texto */
+  overflow:hidden;            /* para que no se salga el texto animado */
 }
 
 .btn:hover{
@@ -252,7 +252,6 @@ a{color:inherit;text-decoration:none}
   overflow:hidden;
 }
 
-/* Banner de bombillas de fondo */
 .top-strip .icon-strip{
   position:absolute;
   inset:0;
@@ -269,7 +268,7 @@ a{color:inherit;text-decoration:none}
 /* Contenedor del + y el menú, encima del banner */
 .top-nav{
   position:relative;
-  z-index:2;                 /* por encima de las bombillas */
+  z-index:2;                 /* encima del banner */
   height:100%;
   display:flex;
   align-items:center;
@@ -352,31 +351,31 @@ a{color:inherit;text-decoration:none}
     pointer-events: none;
     transition: transform 0.3s ease, opacity 0.3s ease;
     z-index: 1000;
-    margin-left: 0;        /* ya no hace falta el margen horizontal */
+    margin-left: 0;        /* sin margen en móvil */
   }
 
-  /* Cuando está abierto (clase is-open desde JS) */
+  /* Cuando está abierto */
   .top-panel.is-open {
     transform: translateX(0);
     opacity: 1;
     pointer-events: auto;
   }
 
-  /* Enlaces ocupan todo el ancho y son fáciles de pulsar */
+  /* Items del menú en columna */
   .side-item {
     display: block;
     padding: 12px 0;
     font-size: 1.1rem;
   }
 
-  /* En móvil ya no dependemos del :hover para mostrar el panel */
+  /* Desactivar el hover en móvil */
   .top-nav:hover .top-panel{
-    /* vacío para que no afecte en táctiles */
+    
   }
 }
 
 
-/* Animación del banner (bombillas moviéndose a la derecha) */
+/* Animación de desplazamiento horizontal infinito */
 @keyframes scrollIcons{
   0%   { background-position:0 50%; }
   100% { background-position:260px 50%; }
@@ -385,7 +384,7 @@ a{color:inherit;text-decoration:none}
 
 /* ==== SIDEBAR CON BOTÓN + Y PANEL DESPLEGABLE ==== */
 
-/* ===== SIDEBAR: + a la izquierda, títulos en fila a la derecha ===== */
+/* ===== SIDEBAR===== */
 
 /* Celda de la barra lateral en el grid */
 .side{
@@ -429,7 +428,7 @@ a{color:inherit;text-decoration:none}
     transform .25s ease;
 }
 
-/* Al pasar el ratón por el área del menú (+ y zona alrededor) */
+/* Al pasar el ratón por la barra lateral, se abre el menú */
 .side:hover .side-panel{
   max-width:700px;          /* ancho máximo del menú; el resto del banner se sigue viendo */
   opacity:1;
@@ -476,7 +475,7 @@ a{color:inherit;text-decoration:none}
   font-weight:600;
 }
 
-/* Espaciador opcional bajo el menú, si lo quieres */
+/* Espaciador opcional bajo el menú */
 .side-return{
   margin-top:8px;
   height:10px; /* ajustable */
@@ -487,7 +486,7 @@ a{color:inherit;text-decoration:none}
   animation: sweepDown 260ms ease-out;
 }
 
-/* Item activo: sin globo, solo texto destacado + subrayado */
+/* Item activo: solo texto destacado + subrayado */
 .side-item.active{
   color:var(--gold);
   font-weight:600;
@@ -504,7 +503,7 @@ a{color:inherit;text-decoration:none}
   display:flex;
   flex-direction:column;
   gap:22px;
-  margin-top:-25px;   /* añade este margen si quieres bajar un poco el bloque */
+  margin-top:-25px;        /* ajusta para acercar el contenido al banner */
 }
 
 .card{
@@ -536,9 +535,9 @@ a{color:inherit;text-decoration:none}
 
 .profile-name{
   font-family: "Poppins", sans-serif;
-  font-weight:100;                    /* súper fino como la portada */
+  font-weight:100;                    /* ultra fina */
   font-size:clamp(2rem, 2vw, 2rem); /* tamaño elegante adaptable */
-  letter-spacing:.6em;               /* similar al de portada */
+  letter-spacing:.6em;               /* mucho espaciado */
   text-transform:uppercase;
   color:var(--gold);                  /* mismo color que en la portada */
   line-height:1.1;
@@ -580,7 +579,7 @@ a{color:inherit;text-decoration:none}
   border-color:var(--gold);
 }
 
-/* Ya no ocultamos secciones con JS, así que .section es neutro */
+/* Animación de aparición suave */
 .section{
   opacity:1;
   transform:none;
@@ -625,7 +624,7 @@ a{color:inherit;text-decoration:none}
 /* Botón volver a portada arriba a la derecha */
 .back-floating{
   position:absolute;
-  top:120px;       /* ajusta si quieres más arriba/abajo */
+  top:120px;       /* un poco más abajo del banner */
   right:60px;      /* alineado visualmente con padding general */
   color:var(--gold);
   font-size:.9rem;
@@ -657,7 +656,7 @@ a{color:inherit;text-decoration:none}
 @media (max-width: 768px) {
   .cover::after{
     font-size: 120vw;   /* Mucho más grande para móviles */
-    opacity: 0.08;      /* Un pelín más visible (opcional) */
+    opacity: 0.08;      /* Un poco más visible en pantallas pequeñas */
   }
 }
 @media (max-width: 768px) {
@@ -666,7 +665,7 @@ a{color:inherit;text-decoration:none}
     display: block;
     text-align: right;
     margin: 8px 16px 0 16px;   /* pequeño margen interior */
-    z-index: 1;                /* ya no necesita estar por encima de todo */
+    z-index: 1;                /* debajo del menú móvil */
   }
 
   .container {
