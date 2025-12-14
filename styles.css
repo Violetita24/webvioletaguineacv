@@ -42,7 +42,7 @@ a{color:inherit;text-decoration:none}
     var(--nude-soft);
   display:flex;align-items:center;justify-content:center;
   padding:0;
-  z-index: -1; /* detrás del contenido */
+  z-index: 0; /* detrás del contenido */
 }
 /* Marca de agua con V gigante */
 .cover::after{
@@ -73,6 +73,7 @@ a{color:inherit;text-decoration:none}
   text-align:center;
   background:transparent;
   position: relative;
+  z-index: 1; /* encima del fondo */
 }
 
 .cover-top{
@@ -151,6 +152,7 @@ a{color:inherit;text-decoration:none}
   display:inline-block;
   position:relative;
   transition:transform 0.4s ease;
+  pointer-events: none;
 }
 
 /* Animación suave arriba → abajo → centro */
