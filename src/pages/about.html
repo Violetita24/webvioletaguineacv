@@ -1,11 +1,10 @@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Violeta Guinea · Experiencia</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Violeta Guinea · Sobre mí</title>
+  <link rel="stylesheet" href="../styles.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CW0E3J33S7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -34,15 +33,15 @@
     <!-- Menú superpuesto encima del banner -->
     <nav class="top-nav" aria-label="Navegación de secciones">
       <button class="top-toggle" type="button">
-        <span class="top-toggle-icon">﹢</span>
+        <span class="top-toggle-icon">+</span>
       </button>
 
       <div class="top-panel">
         <!-- En ABOUT: "Quién soy" es la activa -->
-        <a class="side-item" href="about.html"><span class="side-label">Quién soy</span></a>
+        <a class="side-item active" href="about.html"><span class="side-label">Quién soy</span></a>
         <a class="side-item" href="skills.html"><span class="side-label">Skills</span></a>
         <a class="side-item" href="formacion.html"><span class="side-label">Formación</span></a>
-        <a class="side-item active" href="experiencia.html"><span class="side-label">Experiencia</span></a>
+        <a class="side-item" href="experiencia.html"><span class="side-label">Experiencia</span></a>
         <a class="side-item" href="contacto.html"><span class="side-label">Contacto</span></a>
       </div>
     </nav>
@@ -52,7 +51,7 @@
   <div class="container" role="main">
 
     <!-- Volver a portada flotando -->
-    <a href="index.html" class="back-floating">← Volver a portada</a>
+    <a href="../../index.html" class="back-floating">← Volver a portada</a>
 
     <!-- CONTENIDO -->
     <section class="content">
@@ -71,37 +70,30 @@
         </div>
       </article>
 
-
-
-      <!-- EXPERIENCIA -->
-      <article class="card section">
-        <div class="section-title">Experiencia</div>
-        <div class="text">
-          <p>Mi experiencia se basa en proyectos académicos y prácticas en el ciclo:</p>
-          <ul>
-            <li>Desarrollo de aplicaciones web con autenticación y gestión de datos.</li>
-            <li>Maquetación responsive con atención a accesibilidad.</li>
-            <li>Proyectos con Java/PHP y conexión a bases de datos.</li>
-          </ul>
-        </div>
-      </article>
-      <article class="card section">
-        <div class="section-title">Otras Experiencias</div>
-        <div class="text">
-          <p>-<strong>Vendedora/compradora profesional</strong></p>
-          <ul>
-            <li>Empresa: CashConverters</li>
-            <li>Duración: 2023 – 2025</li>
-          </ul>
-          <p>-<strong>Tecnico de sonido e iluminación</strong></p>
-          <ul>
-            <li>Empresa: SonoIbiza</li>
-            <li>Duración: 2019 – 2021</li>
-          </ul>
+      <!-- QUIÉN SOY -->
+      <article class="card">
+        <div class="section-top" style="display:flex;gap:22px;align-items:flex-start;">
+          <div class="sobre-img">
+            <img src="../../assets/Fotocurriculum.png" alt="Foto de Violeta Guinea">
+          </div>
+          <div class="section-body" style="flex:1">
+            <div class="section-title">Quién soy</div>
+            <div class="text">
+              <p>Soy estudiante de <strong>Desarrollo de Aplicaciones Web</strong>, con base en HTML, CSS y JavaScript en la parte cliente y PHP, Java y bases de datos en la parte servidor.</p>
+              <p>Me gusta escribir código claro, cuidar los detalles visuales y aprender buenas prácticas. Disfruto trabajando en equipo y viendo cómo una idea se transforma en una aplicación.</p>
+               <ul>
+                <li>Tras finalizar mi Grado Superior en Desarrollo de Aplicaciones Web, mi plan es <strong>seguir formándome</strong>  con un Máster en Ciberseguridad y, posteriormente, con una especialización en Inteligencia Artificial. Ambas áreas me atraen por su impacto presente y futuro en el sector tecnológico, y considero que complementan perfectamente mi perfil como desarrolladora.</li>
+                <li>Tengo previsto realizar cursos complementarios que refuercen mis conocimientos y me permitan mantenerme al día en las tecnologías actuales.</li>
+                <li>Perfil orientado actualmente a desarrollo web full-stack junior.</li>
+                <li>Actitud responsable, organizada y con muchas ganas de aprender.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </article>
 
     </section>
+
   </div>
 
   <!-- FOOTER -->
@@ -111,8 +103,10 @@
   </footer>
 
 </div>
-
+   <script src="../main.js"></script>
 
 </body>
 </html>
+
+
 

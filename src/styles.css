@@ -1,4 +1,4 @@
-
+﻿
 /* Fuente */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Marcellus&family=Space+Grotesk:wght@400;600&family=Inter:wght@400;600&display=swap");
 
@@ -155,7 +155,7 @@ a{color:inherit;text-decoration:none}
   pointer-events: none;
 }
 
-/* Animación suave arriba → abajo → centro */
+/* Animación suave arriba -> abajo -> centro */
 .btn:hover .btn-slide{
   animation:floatText 0.5s ease forwards;
 }
@@ -686,3 +686,5 @@ a{color:inherit;text-decoration:none}
     padding-top: 8px;          /* un poco de aire debajo de la barra */
   }
 }
+
+

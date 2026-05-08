@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Violeta Guinea · Portfolio CV</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="src/styles.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CW0E3J33S7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -25,32 +25,17 @@
     <div class="cover-desc" id="cover-desc"></div>
 
     <div class="cover-cta">
-      <a class="btn" href="about.html">
+      <a class="btn" href="src/pages/about.html">
         <span class="btn-slide">Perfil</span>
       </a>
     </div>
   </div>
 </main>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const el = document.getElementById("cover-desc");
-
-    const text = "Busco una empresa donde realizar mis prácticas de FCT, aportar como desarrolladora junior y seguir aprendiendo en proyectos reales. Abierta a modalidad presencial, híbrida o telemática.";
-
-    let i = 0;
-
-    function type() {
-      if (i < text.length) {
-        el.textContent += text.charAt(i);
-        i++;
-        setTimeout(type, 30);
-      }
-    }
-
-    type();
-  });
-</script>
+<script src="src/main.js"></script>
 
 </body>
 </html>
+
+
+

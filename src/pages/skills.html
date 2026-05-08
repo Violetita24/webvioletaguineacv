@@ -1,11 +1,11 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Violeta Guinea · Contacto</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Violeta Guinea · Skills</title>
+  <link rel="stylesheet" href="../styles.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CW0E3J33S7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -18,7 +18,7 @@
 
 <div class="app">
 
-   <!-- HEADER -->
+  <!-- HEADER -->
   <header class="app-header" role="banner">
     <div class="app-header-inner">
       <div class="app-header-title">PERFIL · PORTFOLIO CV</div>
@@ -34,16 +34,16 @@
     <!-- Menú superpuesto encima del banner -->
     <nav class="top-nav" aria-label="Navegación de secciones">
       <button class="top-toggle" type="button">
-        <span class="top-toggle-icon">﹢</span>
+        <span class="top-toggle-icon">+</span>
       </button>
 
       <div class="top-panel">
         <!-- En ABOUT: "Quién soy" es la activa -->
         <a class="side-item" href="about.html"><span class="side-label">Quién soy</span></a>
-        <a class="side-item" href="skills.html"><span class="side-label">Skills</span></a>
+        <a class="side-item active" href="skills.html"><span class="side-label">Skills</span></a>
         <a class="side-item" href="formacion.html"><span class="side-label">Formación</span></a>
         <a class="side-item" href="experiencia.html"><span class="side-label">Experiencia</span></a>
-        <a class="side-item active" href="contacto.html"><span class="side-label">Contacto</span></a>
+        <a class="side-item" href="contacto.html"><span class="side-label">Contacto</span></a>
       </div>
     </nav>
   </div>
@@ -52,7 +52,7 @@
   <div class="container" role="main">
 
     <!-- Volver a portada flotando -->
-    <a href="index.html" class="back-floating">← Volver a portada</a>
+    <a href="../../index.html" class="back-floating">← Volver a portada</a>
 
     <!-- CONTENIDO -->
     <section class="content">
@@ -71,56 +71,47 @@
         </div>
       </article>
 
-
-      <article class="card section">
-        <div class="section-title">Contacto</div>
+      <!-- SKILLS -->
+      <article class="card section" id="sec-skills">
+        <div class="section-title">Skills</div>
         <div class="text">
-          <p>
-            Si quieres que realice mis <strong>prácticas de FCT</strong> en tu empresa,
-            estaré encantada de hablar y valorar cómo puedo aportar en el desarrollo de aplicaciones web.
-          </p>
-          <div class="pill-row" style="margin-top:8px">
-            <span class="pill highlight">Disponible FCT 2025</span>
-            <span class="pill">Presencial / Híbrido / Telemático</span>
+          <p>Estas son algunas de las tecnologías y herramientas que manejo:</p>
+
+          <div class="pill-row">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">Flexbox / Grid</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">PHP</span>
+            <span class="pill">Java</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">Oracle</span>
+            <span class="pill">Git / GitHub</span>
+            <span class="pill">SCRUM</span>
           </div>
-          <ul style="margin-top:8px">
-            <li>📍 España</li>
-            <li>✉️ <a href="mailto:tu.email@ejemplo.com">violetaguinea@gmail.com</a></li>
-            <li>
-              🔗 <a href="https://www.linkedin.com/in/violeta-guinea-8232ab164/"
-                    target="_blank" rel="noreferrer">
-                  linkedin.com/in/violeta-guinea
-                  </a>
-            </li>
-            <li>
-              <a href="https://github.com/Violettita24" target="_blank">
-                  github.com/Violettita24
-               </a>
-            </li>
-          </ul>
+
+          <p style="margin-top:10px">
+            <strong>Inglés</strong>  intermedio (B1/B2). En camino a sacarme titulación oficial B2
+            Además: organización, trabajo en equipo, interés por buenas prácticas y testing básico.
+          </p>
         </div>
       </article>
 
     </section>
+
   </div>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div>Violeta Guinea · Portfolio CV</div>
     <div class="muted">Diseñado en HTML, CSS &amp; JavaScript</div>
   </footer>
-</div>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".top-toggle");
-    const panel = document.querySelector(".top-panel");
 
-    if (toggle && panel) {
-      toggle.addEventListener("click", function () {
-        panel.classList.toggle("is-open");
-      });
-    }
-  });
-</script>
+</div>
+<script src="../main.js"></script>
 
 </body>
 </html>
+
+
+
