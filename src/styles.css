@@ -320,13 +320,30 @@ body:not([data-page="home"]) .site-locale-switch{
   color:var(--muted);
 }
 
+body[data-page="about"] .app-header{
+  padding-right:56px;
+}
+
+
+body[data-page="about"] .profile-top{
+  justify-content:center;
+}
+
+body[data-page="about"] .profile-meta{
+  align-items:center;
+  text-align:center;
+  max-width:920px;
+  margin:0 auto;
+}
+
 .container{
   width:100%;
   padding:5px 30px;
   box-sizing:border-box;
 }
+
 @media(max-width:960px){
-  body:not([data-page="home"]) .site-locale-switch{
+  body:not([data-page="home"]).site-locale-switch{
     top:16px;
     right:18px;
   }
@@ -648,6 +665,18 @@ body:not([data-page="home"]) .site-locale-switch{
 .skills-card{
   min-height:520px;
   overflow:hidden;
+}
+
+.skills-surface{
+  background:rgba(248,238,238,0.38);
+  border:0;
+  box-shadow:none;
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+}
+
+.skills-surface + .skills-surface{
+  margin-top:14px;
 }
 
 .skills-cloud{

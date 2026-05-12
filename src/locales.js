@@ -51,7 +51,7 @@ export const locales = {
         "He trabajado en interfaces responsive, flujos con GitHub, pull requests, revisiones de código e integración de APIs durante mis prácticas profesionales.",
       courses:
         "Mi objetivo es seguir ampliando mi formación y presentar mi perfil a universidades y oportunidades internacionales, especialmente en Irlanda.",
-      profile: "Perfil orientado a desarrollo web full-stack junior.",
+      profile: "Perfil orientado a desarrollo web full-stack junior, con especial interés en cybersecurity.",
       attitude:
         "Me considero una persona responsable, colaborativa y con una motivación fuerte por aprender y mejorar en proyectos reales.",
       photoAlt: "Foto de Violeta Guinea",
@@ -164,7 +164,7 @@ export const locales = {
         "Particularly interested in clean, scalable and maintainable software architecture.",
       courses:
         "Strongly motivated to continue growing in software engineering and modern web technologies, with a special interest in academic opportunities in Ireland.",
-      profile: "Profile focused on junior full-stack web development.",
+      profile: "Profile focused on junior full-stack web development, with a strong interest in cybersecurity.",
       attitude:
         "Responsible, collaborative and highly motivated to learn through real-world projects.",
       photoAlt: "Photo of Violeta Guinea",
