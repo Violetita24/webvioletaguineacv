@@ -1,29 +1,44 @@
+import { getLocaleValue } from "./locales.js";
+import { renderHeaderInner } from "./components/shared/headerInner.js";
+import { renderFooter, syncFooterText } from "./components/shared/footer.js";
+import { initLanguageMenu } from "./languageMenu.js";
+
+let coverTypewriterRun = 0;
+
 document.addEventListener("DOMContentLoaded", function () {
+  renderHeaderInner();
+  renderFooter();
+
+  initLanguageMenu({
+    onLocaleChange: function () {
+      restartCoverTypewriter();
+      syncFooterText();
+    },
+  });
+
+  restartCoverTypewriter();
+});
+
+function restartCoverTypewriter() {
   const coverDescription = document.getElementById("cover-desc");
 
-  if (coverDescription) {
-    const text =
-      "Busco una empresa donde realizar mis prácticas de FCT, aportar como desarrolladora junior y seguir aprendiendo en proyectos reales. Abierta a modalidad presencial, híbrida o telemática.";
+  if (!coverDescription) return;
 
-    let index = 0;
+  const text = getLocaleValue("cover.description");
+  const currentRun = (coverTypewriterRun += 1);
+  let index = 0;
 
-    function typeText() {
-      if (index < text.length) {
-        coverDescription.textContent += text.charAt(index);
-        index += 1;
-        setTimeout(typeText, 30);
-      }
+  coverDescription.textContent = "";
+
+  function typeText() {
+    if (currentRun !== coverTypewriterRun) return;
+
+    if (index < text.length) {
+      coverDescription.textContent += text.charAt(index);
+      index += 1;
+      setTimeout(typeText, 30);
     }
-
-    typeText();
   }
 
-  const toggle = document.querySelector(".top-toggle");
-  const panel = document.querySelector(".top-panel");
-
-  if (toggle && panel) {
-    toggle.addEventListener("click", function () {
-      panel.classList.toggle("is-open");
-    });
-  }
-});
+  typeText();
+}

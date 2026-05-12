@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Vite Dev Server (Terminal)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev",
+      "serverReadyAction": {
+        "action": "startDebugging",
+        "pattern": "Local:",
+        "name": "Launch browser"
+      }
+    },
+    {
+      "name": "Launch browser",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173/index.html",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
