@@ -1,14 +1,19 @@
 import { getLocaleValue } from "./locales.js";
-import { renderHeaderInner } from "./headerInner.js";
+import { renderHeaderInner } from "./components/shared/headerInner.js";
+import { renderFooter, syncFooterText } from "./components/shared/footer.js";
 import { initLanguageMenu } from "./languageMenu.js";
 
 let coverTypewriterRun = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
   renderHeaderInner();
+  renderFooter();
 
   initLanguageMenu({
-    onLocaleChange: restartCoverTypewriter,
+    onLocaleChange: function () {
+      restartCoverTypewriter();
+      syncFooterText();
+    },
   });
 
   restartCoverTypewriter();
