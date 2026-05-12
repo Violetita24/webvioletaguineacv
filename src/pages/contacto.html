@@ -14,14 +14,31 @@
     gtag('config', 'G-CW0E3J33S7');
   </script>
 </head>
-<body>
+<body data-page="contact">
+
+<div class="site-locale-switch">
+  <button
+    id="language-toggle"
+    type="button"
+    class="site-locale-trigger"
+    aria-haspopup="menu"
+    aria-expanded="false"
+    aria-label="Seleccionar idioma"
+  >
+    <img src="../../assets/icon-world.svg" alt="" class="site-locale-icon" aria-hidden="true">
+    <span class="site-locale-divider" aria-hidden="true">|</span>
+    <span id="language-current-label" class="site-locale-current">Spain</span>
+  </button>
+
+  <div id="language-menu" class="site-locale-menu hidden" role="menu"></div>
+</div>
 
 <div class="app">
 
    <!-- HEADER -->
   <header class="app-header" role="banner">
     <div class="app-header-inner">
-      <div class="app-header-title">PERFIL · PORTFOLIO CV</div>
+      <div class="app-header-title" data-i18n="common.headerTitle">PERFIL · PORTFOLIO CV</div>
       <div class="app-header-sub">VIOLETA</div>
     </div>
   </header>
@@ -32,18 +49,18 @@
     <div class="icon-strip"></div>
 
     <!-- Menú superpuesto encima del banner -->
-    <nav class="top-nav" aria-label="Navegación de secciones">
+    <nav class="top-nav" aria-label="Navegación de secciones" data-i18n-aria-label="common.navLabel">
       <button class="top-toggle" type="button">
         <span class="top-toggle-icon">+</span>
       </button>
 
       <div class="top-panel">
         <!-- En ABOUT: "Quién soy" es la activa -->
-        <a class="side-item" href="about.html"><span class="side-label">Quién soy</span></a>
-        <a class="side-item" href="skills.html"><span class="side-label">Skills</span></a>
-        <a class="side-item" href="formacion.html"><span class="side-label">Formación</span></a>
-        <a class="side-item" href="experiencia.html"><span class="side-label">Experiencia</span></a>
-        <a class="side-item active" href="contacto.html"><span class="side-label">Contacto</span></a>
+        <a class="side-item" href="about.html"><span class="side-label" data-i18n="common.about">Quién soy</span></a>
+        <a class="side-item" href="skills.html"><span class="side-label" data-i18n="common.skills">Skills</span></a>
+        <a class="side-item" href="formacion.html"><span class="side-label" data-i18n="common.education">Formación</span></a>
+        <a class="side-item" href="experiencia.html"><span class="side-label" data-i18n="common.experience">Experiencia</span></a>
+        <a class="side-item active" href="contacto.html"><span class="side-label" data-i18n="common.contact">Contacto</span></a>
       </div>
     </nav>
   </div>
@@ -52,7 +69,7 @@
   <div class="container" role="main">
 
     <!-- Volver a portada flotando -->
-    <a href="../../index.html" class="back-floating">← Volver a portada</a>
+    <a href="../../index.html" class="back-floating" data-i18n="common.backHome">← Volver a portada</a>
 
     <!-- CONTENIDO -->
     <section class="content">
@@ -61,9 +78,9 @@
       <article class="card profile-top" aria-labelledby="perfilTitle">
         <div class="profile-meta">
           <div class="profile-name" id="perfilTitle">Violeta Guinea</div>
-          <div class="profile-role muted">Desarrollo de Aplicaciones Web · Estudiante de 2º DAW</div>
+          <div class="profile-role muted" data-i18n="common.role">Desarrollo de Aplicaciones Web · Estudiante de 2º DAW</div>
           <div style="height:8px"></div>
-          <div class="text">
+          <div class="text" data-i18n="common.profileIntro" data-i18n-type="innerHTML">
             Soy estudiante de <strong>Desarrollo de Aplicaciones Web</strong>, con
             conocimientos en HTML, CSS, JavaScript (frontend) y PHP/Java y bases de datos (backend).
             Me gusta el código bien estructurado y el diseño pensado para el usuario.
@@ -73,18 +90,18 @@
 
 
       <article class="card section">
-        <div class="section-title">Contacto</div>
+        <div class="section-title" data-i18n="contact.title">Contacto</div>
         <div class="text">
-          <p>
+          <p data-i18n="contact.intro" data-i18n-type="innerHTML">
             Si quieres que realice mis <strong>prácticas de FCT</strong> en tu empresa,
             estaré encantada de hablar y valorar cómo puedo aportar en el desarrollo de aplicaciones web.
           </p>
           <div class="pill-row" style="margin-top:8px">
-            <span class="pill highlight">Disponible FCT 2025</span>
-            <span class="pill">Presencial / Híbrido / Telemático</span>
+            <span class="pill highlight" data-i18n="contact.available">Disponible FCT 2025</span>
+            <span class="pill" data-i18n="contact.mode">Presencial / Híbrido / Telemático</span>
           </div>
           <ul style="margin-top:8px">
-            <li>📍 España</li>
+            <li>📍 <span data-i18n="contact.location">España</span></li>
             <li>✉️ <a href="mailto:violetaguinea@gmail.com">violetaguinea@gmail.com</a></li>
             <li>
               🔗 <a href="https://www.linkedin.com/in/violeta-guinea-8232ab164/"
@@ -105,11 +122,11 @@
   </div>
 
   <footer class="footer">
-    <div>Violeta Guinea · Portfolio CV</div>
-    <div class="muted">Diseñado en HTML, CSS &amp; JavaScript</div>
+    <div data-i18n="common.footerBrand">Violeta Guinea · Portfolio CV</div>
+    <div class="muted" data-i18n="common.footerBuilt" data-i18n-type="innerHTML">Diseñado en HTML, CSS &amp; JavaScript</div>
   </footer>
 </div>
-<script src="../main.js"></script>
+<script type="module" src="../main.js"></script>
 
 </body>
 </html>

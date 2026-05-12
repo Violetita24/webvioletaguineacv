@@ -13,26 +13,43 @@
     gtag('config', 'G-CW0E3J33S7');
   </script>
 </head>
-<body>
+<body data-page="home">
+
+<div class="site-locale-switch">
+  <button
+    id="language-toggle"
+    type="button"
+    class="site-locale-trigger"
+    aria-haspopup="menu"
+    aria-expanded="false"
+    aria-label="Seleccionar idioma"
+  >
+    <img src="assets/icon-world.svg" alt="" class="site-locale-icon" aria-hidden="true">
+    <span class="site-locale-divider" aria-hidden="true">|</span>
+    <span id="language-current-label" class="site-locale-current">Spain</span>
+  </button>
+
+  <div id="language-menu" class="site-locale-menu hidden" role="menu"></div>
+</div>
 
 <main class="cover">
   <div class="cover-inner">
-    <div class="cover-top">PORTFOLIO CV</div>
+    <div class="cover-top" data-i18n="cover.top">PORTFOLIO CV</div>
 
     <div class="cover-name">VIOLETA<br>GUINEA</div>
-    <div class="cover-sub u-uppercase">Estudiante de desarrollo de aplicaciones web</div>
+    <div class="cover-sub u-uppercase" data-i18n="cover.subtitle">Estudiante de desarrollo de aplicaciones web</div>
 
     <div class="cover-desc" id="cover-desc"></div>
 
     <div class="cover-cta">
       <a class="btn" href="src/pages/about.html">
-        <span class="btn-slide">Perfil</span>
+        <span class="btn-slide" data-i18n="cover.cta">Perfil</span>
       </a>
     </div>
   </div>
 </main>
 
-<script src="src/main.js"></script>
+<script type="module" src="src/main.js"></script>
 
 </body>
 </html>
