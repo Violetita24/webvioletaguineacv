@@ -15,62 +15,74 @@
 </head>
 <body data-page="about">
 
-<div class="site-locale-switch">
-  <button
-    id="language-toggle"
-    type="button"
-    class="site-locale-trigger"
-    aria-haspopup="menu"
-    aria-expanded="false"
-    aria-label="Seleccionar idioma"
-  >
-    <img src="/assets/icon-world.svg" alt="" class="site-locale-icon" aria-hidden="true">
-    <span class="site-locale-divider" aria-hidden="true">|</span>
-    <span id="language-current-label" class="site-locale-current">Spain</span>
-  </button>
-
-  <div id="language-menu" class="site-locale-menu hidden" role="menu"></div>
-</div>
-
 <div class="app">
 
   <!-- HEADER -->
   <header class="app-header" role="banner">
     <div class="app-header-inner">
-      <div class="app-header-title" data-i18n="common.headerTitle">PERFIL · PORTFOLIO CV</div>
+      <div class="app-header-title" data-i18n="common.headerTitle">
+        PERFIL · PORTFOLIO CV
+      </div>
+
       <div class="app-header-sub">VIOLETA</div>
     </div>
   </header>
 
-  <!-- BARRA: BANNER + ICONO + MENÚ SUPERPUESTO -->
+  <!-- BARRA -->
   <div class="top-strip">
-    <!-- Banner de bombillas de fondo -->
+
     <div class="icon-strip"></div>
 
-    <!-- Menú superpuesto encima del banner -->
-    <nav class="top-nav" aria-label="Navegación de secciones" data-i18n-aria-label="common.navLabel">
-      <button class="top-toggle" type="button">
-        <span class="top-toggle-icon">+</span>
-      </button>
+    <nav class="top-nav"
+         aria-label="Navegación de secciones"
+         data-i18n-aria-label="common.navLabel">
 
       <div class="top-panel">
-        <!-- En ABOUT: "Quién soy" es la activa -->
-        <a class="side-item active" href="about.html"><span class="side-label" data-i18n="common.about">Quién soy</span></a>
-        <a class="side-item" href="skills.html"><span class="side-label" data-i18n="common.skills">Skills</span></a>
-        <a class="side-item" href="formacion.html"><span class="side-label" data-i18n="common.education">Formación</span></a>
-        <a class="side-item" href="experiencia.html"><span class="side-label" data-i18n="common.experience">Experiencia</span></a>
-        <a class="side-item" href="contacto.html"><span class="side-label" data-i18n="common.contact">Contacto</span></a>
+
+        <a class="side-item active" href="about.html">
+          <span class="side-label" data-i18n="common.about">
+            Quién soy
+          </span>
+        </a>
+
+        <a class="side-item" href="skills.html">
+          <span class="side-label" data-i18n="common.skills">
+            Skills
+          </span>
+        </a>
+
+        <a class="side-item" href="formacion.html">
+          <span class="side-label" data-i18n="common.education">
+            Formación
+          </span>
+        </a>
+
+        <a class="side-item" href="experiencia.html">
+          <span class="side-label" data-i18n="common.experience">
+            Experiencia
+          </span>
+        </a>
+
+        <a class="side-item" href="contacto.html">
+          <span class="side-label" data-i18n="common.contact">
+            Contacto
+          </span>
+        </a>
+
       </div>
     </nav>
   </div>
 
-  <!-- CONTENIDO PRINCIPAL -->
+  <!-- CONTENIDO -->
   <div class="container" role="main">
 
-    <!-- Volver a portada flotando -->
-    <a href="../../index.html" class="back-floating" data-i18n="common.backHome">← Volver a portada</a>
+    <a href="../../index.html"
+       class="back-floating"
+       data-i18n="common.backHome">
 
-    <!-- CONTENIDO -->
+      ← Volver a portada
+    </a>
+
     <section class="content">
 
       <!-- BLOQUE SUPERIOR PERFIL -->
@@ -98,8 +110,8 @@
             <div class="text">
               <p data-i18n="about.intro" data-i18n-type="innerHTML">Soy estudiante de <strong>Desarrollo de Aplicaciones Web</strong>, con base en HTML, CSS y JavaScript en la parte cliente y PHP, Java y bases de datos en la parte servidor.</p>
               <p data-i18n="about.details">Me gusta escribir código claro, cuidar los detalles visuales y aprender buenas prácticas. Disfruto trabajando en equipo y viendo cómo una idea se transforma en una aplicación.</p>
-               <ul>
-                <li data-i18n="about.plan" data-i18n-type="innerHTML">Tras finalizar mi Grado Superior en Desarrollo de Aplicaciones Web, mi plan es <strong>seguir formándome</strong>  con un Máster en Ciberseguridad y, posteriormente, con una especialización en Inteligencia Artificial. Ambas áreas me atraen por su impacto presente y futuro en el sector tecnológico, y considero que complementan perfectamente mi perfil como desarrolladora.</li>
+              <ul>
+                <li data-i18n="about.plan" data-i18n-type="innerHTML">Tras finalizar mi Grado Superior en Desarrollo de Aplicaciones Web, mi plan es <strong>seguir formándome</strong> con un Máster en Ciberseguridad y, posteriormente, con una especialización en Inteligencia Artificial. Ambas áreas me atraen por su impacto presente y futuro en el sector tecnológico, y considero que complementan perfectamente mi perfil como desarrolladora.</li>
                 <li data-i18n="about.courses">Tengo previsto realizar cursos complementarios que refuercen mis conocimientos y me permitan mantenerme al día en las tecnologías actuales.</li>
                 <li data-i18n="about.profile">Perfil orientado actualmente a desarrollo web full-stack junior.</li>
                 <li data-i18n="about.attitude">Actitud responsable, organizada y con muchas ganas de aprender.</li>
@@ -110,20 +122,30 @@
       </article>
 
     </section>
-
   </div>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div data-i18n="common.footerBrand">Violeta Guinea · Portfolio CV</div>
-    <div class="muted" data-i18n="common.footerBuilt" data-i18n-type="innerHTML">Diseñado en HTML, CSS &amp; JavaScript</div>
+
+    <div data-i18n="common.footerBrand">
+      Violeta Guinea · Portfolio CV
+    </div>
+
+    <div class="muted"
+         data-i18n="common.footerBuilt"
+         data-i18n-type="innerHTML">
+
+      Diseñado en HTML, CSS &amp; JavaScript
+    </div>
+
   </footer>
 
 </div>
-   <script type="module" src="../main.js"></script>
+
+<script type="module" src="../main.js"></script>
 
 </body>
-</html>
 
+</html>
 
 

@@ -16,26 +16,9 @@
 </head>
 <body data-page="contact">
 
-<div class="site-locale-switch">
-  <button
-    id="language-toggle"
-    type="button"
-    class="site-locale-trigger"
-    aria-haspopup="menu"
-    aria-expanded="false"
-    aria-label="Seleccionar idioma"
-  >
-    <img src="/assets/icon-world.svg" alt="" class="site-locale-icon" aria-hidden="true">
-    <span class="site-locale-divider" aria-hidden="true">|</span>
-    <span id="language-current-label" class="site-locale-current">Spain</span>
-  </button>
-
-  <div id="language-menu" class="site-locale-menu hidden" role="menu"></div>
-</div>
-
 <div class="app">
 
-   <!-- HEADER -->
+  <!-- HEADER -->
   <header class="app-header" role="banner">
     <div class="app-header-inner">
       <div class="app-header-title" data-i18n="common.headerTitle">PERFIL · PORTFOLIO CV</div>
@@ -50,10 +33,6 @@
 
     <!-- Menú superpuesto encima del banner -->
     <nav class="top-nav" aria-label="Navegación de secciones" data-i18n-aria-label="common.navLabel">
-      <button class="top-toggle" type="button">
-        <span class="top-toggle-icon">+</span>
-      </button>
-
       <div class="top-panel">
         <!-- En ABOUT: "Quién soy" es la activa -->
         <a class="side-item" href="about.html"><span class="side-label" data-i18n="common.about">Quién soy</span></a>
@@ -74,21 +53,6 @@
     <!-- CONTENIDO -->
     <section class="content">
 
-      <!-- BLOQUE SUPERIOR PERFIL -->
-      <article class="card profile-top" aria-labelledby="perfilTitle">
-        <div class="profile-meta">
-          <div class="profile-name" id="perfilTitle">Violeta Guinea</div>
-          <div class="profile-role muted" data-i18n="common.role">Desarrollo de Aplicaciones Web · Estudiante de 2º DAW</div>
-          <div style="height:8px"></div>
-          <div class="text" data-i18n="common.profileIntro" data-i18n-type="innerHTML">
-            Soy estudiante de <strong>Desarrollo de Aplicaciones Web</strong>, con
-            conocimientos en HTML, CSS, JavaScript (frontend) y PHP/Java y bases de datos (backend).
-            Me gusta el código bien estructurado y el diseño pensado para el usuario.
-          </div>
-        </div>
-      </article>
-
-
       <article class="card section">
         <div class="section-title" data-i18n="contact.title">Contacto</div>
         <div class="text">
@@ -97,7 +61,7 @@
             estaré encantada de hablar y valorar cómo puedo aportar en el desarrollo de aplicaciones web.
           </p>
           <div class="pill-row" style="margin-top:8px">
-            <span class="pill highlight" data-i18n="contact.available">Disponible FCT 2025</span>
+            <span class="pill highlight" data-i18n="contact.available">Disponible para oportunidades académicas y profesionales</span>
             <span class="pill" data-i18n="contact.mode">Presencial / Híbrido / Telemático</span>
           </div>
           <ul style="margin-top:8px">

@@ -23,7 +23,7 @@ export const locales = {
       top: "PORTFOLIO CV",
       subtitle: "Estudiante de desarrollo de aplicaciones web",
       description:
-        "Busco una empresa donde realizar mis prácticas de FCT, aportar como desarrolladora junior y seguir aprendiendo en proyectos reales. Abierta a modalidad presencial, híbrida o telemática.",
+        "En este portfolio me presento como estudiante y comparto lo que he aprendido a lo largo de mi recorrido académico y de proyectos reales en empresa.",
       cta: "Perfil",
     },
     common: {
@@ -37,63 +37,82 @@ export const locales = {
       backHome: "← Volver a portada",
       role: "Desarrollo de Aplicaciones Web · Estudiante de 2º DAW",
       profileIntro:
-        "Soy estudiante de <strong>Desarrollo de Aplicaciones Web</strong>, con conocimientos en HTML, CSS, JavaScript (frontend) y PHP/Java y bases de datos (backend). Me gusta el código bien estructurado y el diseño pensado para el usuario.",
+        "Soy aspirante a desarrolladora web full-stack y actualmente curso el Grado Superior en Desarrollo de Aplicaciones Web (DAW). Tengo experiencia en desarrollo front-end y back-end, diseño responsive e integración de APIs a través de prácticas profesionales y proyectos reales.",
       footerBrand: "Violeta Guinea · Portfolio CV",
       footerBuilt: "Diseñado en HTML, CSS &amp; JavaScript",
     },
     about: {
       title: "Quién soy",
       intro:
-        "Soy estudiante de <strong>Desarrollo de Aplicaciones Web</strong>, con base en HTML, CSS y JavaScript en la parte cliente y PHP, Java y bases de datos en la parte servidor.",
+        "Soy aspirante a <strong>desarrolladora web full-stack</strong> y actualmente curso el Grado Superior en Desarrollo de Aplicaciones Web (DAW).",
       details:
-        "Me gusta escribir código claro, cuidar los detalles visuales y aprender buenas prácticas. Disfruto trabajando en equipo y viendo cómo una idea se transforma en una aplicación.",
+        "Me interesa especialmente la arquitectura de software limpia, escalable y mantenible, y quiero seguir creciendo en ingeniería de software y tecnologías web modernas.",
       plan:
-        "Tras finalizar mi Grado Superior en Desarrollo de Aplicaciones Web, mi plan es <strong>seguir formándome</strong> con un Máster en Ciberseguridad y, posteriormente, con una especialización en Inteligencia Artificial. Ambas áreas me atraen por su impacto presente y futuro en el sector tecnológico, y considero que complementan perfectamente mi perfil como desarrolladora.",
+        "He trabajado en interfaces responsive, flujos con GitHub, pull requests, revisiones de código e integración de APIs durante mis prácticas profesionales.",
       courses:
-        "Tengo previsto realizar cursos complementarios que refuercen mis conocimientos y me permitan mantenerme al día en las tecnologías actuales.",
-      profile: "Perfil orientado actualmente a desarrollo web full-stack junior.",
-      attitude: "Actitud responsable, organizada y con muchas ganas de aprender.",
+        "Mi objetivo es seguir ampliando mi formación y presentar mi perfil a universidades y oportunidades internacionales, especialmente en Irlanda.",
+      profile: "Perfil orientado a desarrollo web full-stack junior.",
+      attitude:
+        "Me considero una persona responsable, colaborativa y con una motivación fuerte por aprender y mejorar en proyectos reales.",
       photoAlt: "Foto de Violeta Guinea",
     },
     skills: {
       title: "Skills",
-      intro: "Estas son algunas de las tecnologías y herramientas que manejo:",
+      intro: "Estas son algunas de las competencias y herramientas que he ido desarrollando:",
       english:
-        "<strong>Inglés</strong> intermedio (B1/B2). En camino a sacarme titulación oficial B2. Además: organización, trabajo en equipo, interés por buenas prácticas y testing básico.",
+        "<strong>Inglés</strong>: certificación de nivel en proceso.",
+      qualificationTitle: "Cualificaciones",
+      driving: "Carnet de conducir B.",
+      englishCertification: "Certificación de inglés en proceso.",
     },
     education: {
       title: "Formación",
-      current:
-        "-Actualmente curso el <strong>Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web (DAW)</strong>.",
-      center: "Centro: CESUR.",
-      durationDaw: "Duración: 2024 - 2026 (2º curso).",
-      webProgramming: "Programación web en entorno cliente y servidor.",
-      otherTitle: "Otras Formaciones",
-      soundDegree: "-<strong>Grado Superior de Sonido</strong>",
-      soundDuration: "Duración: 2019 - 2021 (2º curso).",
-      mediaDegree: "-<strong>Grado Medio en Imagen y Sonido</strong>",
-      mediaDuration: "Duración: 2017 - 2019 (2º curso).",
+      daw:
+        "<strong>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</strong>",
+      dawCenter: "Cesur — Murcia, España",
+      dawDate: "09/2024 – Graduación prevista: 07/2026",
+      sound:
+        "<strong>Grado Superior en Sonido</strong>",
+      soundCenter: "Cesur — Murcia, España",
+      soundDate: "09/2019 – 06/2021",
     },
     experience: {
       title: "Experiencia",
-      intro: "Mi experiencia se basa en proyectos académicos y prácticas en el ciclo:",
-      itemWeb: "Desarrollo de aplicaciones web con autenticación y gestión de datos.",
-      itemResponsive: "Maquetación responsive con atención a accesibilidad.",
-      itemBackend: "Proyectos con Java/PHP y conexión a bases de datos.",
+      sensingRole: "<strong>Web Development Intern — Sensingtools</strong>",
+      sensingMeta: "España | 03/2026 - Actualidad",
+      sensingLink: "www.sensingtools.com",
+      sensingItem1:
+        "Desarrollo y mantenimiento de interfaces web responsive para la landing page de la empresa.",
+      sensingItem2:
+        "Colaboración mediante flujos de GitHub con pull requests, revisiones de código y procesos de merge.",
+      sensingItem3:
+        "Trabajo en el desarrollo de una API para formulario de contacto e integración de chatbot con IA.",
       otherTitle: "Otras Experiencias",
-      sales: "-<strong>Vendedora/compradora profesional</strong>",
-      cashCompany: "Empresa: CashConverters",
-      cashDuration: "Duración: 2023 - 2025",
-      soundTech: "-<strong>Técnico de sonido e iluminación</strong>",
-      soundCompany: "Empresa: SonoIbiza",
-      soundDuration: "Duración: 2019 - 2021",
+      cashRole: "<strong>Sales and Purchasing Associate — CashConverters</strong>",
+      cashMeta: "Murcia, España | 03/2023 – 01/2026",
+      cashItem1:
+        "Atención a clientes en procesos de compra y venta de productos de segunda mano.",
+      cashItem2:
+        "Gestión de atención al cliente y operaciones diarias de tienda.",
+      cashItem3:
+        "Manejo de caja, transacciones y procesos de tasación.",
+      cashItem4:
+        "Desarrollo de habilidades de comunicación y negociación en un entorno retail dinámico.",
+      soundRole: "<strong>Live Sound Technician — SonoIbiza</strong>",
+      soundMeta: "Ibiza, España | 04/2019 – 09/2022",
+      soundItem1:
+        "Apoyo en montaje de sonido en directo y configuración de equipos de audio.",
+      soundItem2:
+        "Trabajo con equipamiento técnico para eventos y actuaciones.",
+      soundItem3:
+        "Apoyo en resolución de incidencias y ajustes técnicos durante eventos.",
     },
     contact: {
       title: "Contacto",
       intro:
-        "Si quieres que realice mis <strong>prácticas de FCT</strong> en tu empresa, estaré encantada de hablar y valorar cómo puedo aportar en el desarrollo de aplicaciones web.",
-      available: "Disponible FCT 2025",
-      mode: "Presencial / Híbrido / Telemático",
+        "Si quieres conocer más sobre mi perfil académico, mis proyectos o mi experiencia, estaré encantada de hablar.",
+      available: "Disponible para oportunidades académicas y profesionales",
+      mode: "Presencial / Híbrido / Remoto",
       location: "España",
     },
   },
@@ -117,7 +136,7 @@ export const locales = {
       top: "PORTFOLIO CV",
       subtitle: "Web application development student",
       description:
-        "I am looking for a company where I can complete my FCT internship, contribute as a junior developer and keep learning through real projects. Open to on-site, hybrid or remote work.",
+        "In this portfolio, I introduce myself as a student and share what I have learned throughout my academic journey and from real company projects.",
       cta: "Profile",
     },
     common: {
@@ -131,62 +150,81 @@ export const locales = {
       backHome: "← Back to cover",
       role: "Web Application Development · 2nd-year DAW student",
       profileIntro:
-        "I am a <strong>Web Application Development</strong> student with knowledge of HTML, CSS, JavaScript for frontend and PHP/Java plus databases for backend. I care about well-structured code and user-focused design.",
+        "Aspiring full-stack web developer currently completing a Higher Vocational Diploma in Web Application Development (DAW). Experienced in front-end and back-end development, responsive design and API integration through professional internships and hands-on development.",
       footerBrand: "Violeta Guinea · Portfolio CV",
       footerBuilt: "Designed in HTML, CSS &amp; JavaScript",
     },
     about: {
       title: "About me",
       intro:
-        "I am a <strong>Web Application Development</strong> student, with a foundation in HTML, CSS and JavaScript on the client side, and PHP, Java and databases on the server side.",
+        "Aspiring <strong>full-stack web developer</strong> currently completing a Higher Vocational Diploma in Web Application Development (DAW).",
       details:
-        "I enjoy writing clear code, taking care of visual details and learning good practices. I like working in a team and seeing how an idea turns into an application.",
+        "Experienced in front-end and back-end development, responsive design and API integration through professional internships and hands-on development.",
       plan:
-        "After finishing my Higher Degree in Web Application Development, my plan is to <strong>continue training</strong> with a Master's degree in Cybersecurity and, later, with a specialization in Artificial Intelligence. Both areas interest me because of their current and future impact on the technology sector, and I believe they complement my developer profile perfectly.",
+        "Particularly interested in clean, scalable and maintainable software architecture.",
       courses:
-        "I plan to take complementary courses to strengthen my knowledge and stay up to date with current technologies.",
-      profile: "Profile currently focused on junior full-stack web development.",
-      attitude: "Responsible, organized and highly motivated to learn.",
+        "Strongly motivated to continue growing in software engineering and modern web technologies, with a special interest in academic opportunities in Ireland.",
+      profile: "Profile focused on junior full-stack web development.",
+      attitude:
+        "Responsible, collaborative and highly motivated to learn through real-world projects.",
       photoAlt: "Photo of Violeta Guinea",
     },
     skills: {
       title: "Skills",
-      intro: "These are some of the technologies and tools I work with:",
+      intro: "These are some of the skills and tools I have been developing:",
       english:
-        "<strong>English</strong> intermediate level (B1/B2). Working towards an official B2 certificate. Also: organization, teamwork, interest in good practices and basic testing.",
+        "<strong>English</strong>: proficiency certification in progress.",
+      qualificationTitle: "Qualifications",
+      driving: "Category B Driving Licence.",
+      englishCertification: "English proficiency certification in progress.",
     },
     education: {
       title: "Education",
-      current:
-        "-I am currently studying the <strong>Higher Degree in Web Application Development (DAW)</strong>.",
-      center: "Center: CESUR.",
-      durationDaw: "Duration: 2024 - 2026 (2nd year).",
-      webProgramming: "Web programming in client-side and server-side environments.",
-      otherTitle: "Other Education",
-      soundDegree: "-<strong>Higher Degree in Sound</strong>",
-      soundDuration: "Duration: 2019 - 2021 (2nd year).",
-      mediaDegree: "-<strong>Intermediate Degree in Image and Sound</strong>",
-      mediaDuration: "Duration: 2017 - 2019 (2nd year).",
+      daw:
+        "<strong>Higher Vocational Diploma in Web Application Development (DAW)</strong>",
+      dawCenter: "Cesur — Murcia, Spain",
+      dawDate: "09/2024 – Expected Graduation: 07/2026",
+      sound:
+        "<strong>Higher Vocational Diploma in Sound Engineering</strong>",
+      soundCenter: "Cesur — Murcia, Spain",
+      soundDate: "09/2019 – 06/2021",
     },
     experience: {
-      title: "Experience",
-      intro: "My experience is based on academic projects and practical coursework:",
-      itemWeb: "Development of web applications with authentication and data management.",
-      itemResponsive: "Responsive layout with attention to accessibility.",
-      itemBackend: "Projects with Java/PHP and database connections.",
+      title: "Work Experience",
+      sensingRole: "<strong>Web Development Intern — Sensingtools</strong>",
+      sensingMeta: "Spain | 03/2026 - Present",
+      sensingLink: "www.sensingtools.com",
+      sensingItem1:
+        "Developed and maintained responsive web interfaces for the company landing page.",
+      sensingItem2:
+        "Collaborated using GitHub workflows with pull requests, code reviews, and merge processes.",
+      sensingItem3:
+        "Worked on the development of an API for contact form and AI chatbot integration.",
       otherTitle: "Other Experience",
-      sales: "-<strong>Professional sales and purchasing assistant</strong>",
-      cashCompany: "Company: CashConverters",
-      cashDuration: "Duration: 2023 - 2025",
-      soundTech: "-<strong>Sound and lighting technician</strong>",
-      soundCompany: "Company: SonoIbiza",
-      soundDuration: "Duration: 2019 - 2021",
+      cashRole: "<strong>Sales and Purchasing Associate — CashConverters</strong>",
+      cashMeta: "Murcia, Spain | 03/2023 – 01/2026",
+      cashItem1:
+        "Assisted customers with second-hand product purchases and sales.",
+      cashItem2:
+        "Managed customer service and daily store operations.",
+      cashItem3:
+        "Handled cash transactions and pricing processes.",
+      cashItem4:
+        "Developed communication and negotiation skills in a fast-paced retail environment.",
+      soundRole: "<strong>Live Sound Technician — SonoIbiza</strong>",
+      soundMeta: "Ibiza, Spain | 04/2019 – 09/2022",
+      soundItem1:
+        "Assisted with live sound setup and audio equipment configuration.",
+      soundItem2:
+        "Worked with technical equipment for events and performances.",
+      soundItem3:
+        "Supported troubleshooting and technical adjustments during events.",
     },
     contact: {
       title: "Contact",
       intro:
-        "If you would like me to complete my <strong>FCT internship</strong> at your company, I would be happy to talk and explore how I can contribute to web application development.",
-      available: "Available for FCT 2025",
+        "If you would like to know more about my academic profile, projects or experience, I would be happy to talk.",
+      available: "Available for academic and professional opportunities",
       mode: "On-site / Hybrid / Remote",
       location: "Spain",
     },

@@ -16,23 +16,6 @@
 </head>
 <body data-page="education">
 
-<div class="site-locale-switch">
-  <button
-    id="language-toggle"
-    type="button"
-    class="site-locale-trigger"
-    aria-haspopup="menu"
-    aria-expanded="false"
-    aria-label="Seleccionar idioma"
-  >
-    <img src="/assets/icon-world.svg" alt="" class="site-locale-icon" aria-hidden="true">
-    <span class="site-locale-divider" aria-hidden="true">|</span>
-    <span id="language-current-label" class="site-locale-current">Spain</span>
-  </button>
-
-  <div id="language-menu" class="site-locale-menu hidden" role="menu"></div>
-</div>
-
 <div class="app">
 
   <!-- HEADER -->
@@ -50,10 +33,6 @@
 
     <!-- Menú superpuesto encima del banner -->
     <nav class="top-nav" aria-label="Navegación de secciones" data-i18n-aria-label="common.navLabel">
-      <button class="top-toggle" type="button">
-        <span class="top-toggle-icon">+</span>
-      </button>
-
       <div class="top-panel">
         <!-- En ABOUT: "Quién soy" es la activa -->
         <a class="side-item" href="about.html"><span class="side-label" data-i18n="common.about">Quién soy</span></a>
@@ -74,49 +53,20 @@
     <!-- CONTENIDO -->
     <section class="content">
 
-      <!-- BLOQUE SUPERIOR PERFIL -->
-      <article class="card profile-top" aria-labelledby="perfilTitle">
-        <div class="profile-meta">
-          <div class="profile-name" id="perfilTitle">Violeta Guinea</div>
-          <div class="profile-role muted" data-i18n="common.role">Desarrollo de Aplicaciones Web · Estudiante de 2º DAW</div>
-          <div style="height:8px"></div>
-          <div class="text" data-i18n="common.profileIntro" data-i18n-type="innerHTML">
-            Soy estudiante de <strong>Desarrollo de Aplicaciones Web</strong>, con
-            conocimientos en HTML, CSS, JavaScript (frontend) y PHP/Java y bases de datos (backend).
-            Me gusta el código bien estructurado y el diseño pensado para el usuario.
-          </div>
-        </div>
-      </article>
-
-
       <!-- FORMACIÓN -->
       <article class="card section">
         <div class="section-title" data-i18n="education.title">Formación</div>
         <div class="text">
-          <p data-i18n="education.current" data-i18n-type="innerHTML">-Actualmente curso el <strong>Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web (DAW)</strong>.</p>
+          <p data-i18n="education.daw" data-i18n-type="innerHTML"><strong>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</strong></p>
           <ul>
-            <li data-i18n="education.center">Centro: CESUR.</li>
-            <li data-i18n="education.durationDaw">Duración: 2024 - 2026 (2º curso).</li>
-            <li data-i18n="education.webProgramming">Programación web en entorno cliente y servidor.</li>
+            <li data-i18n="education.dawCenter">Cesur — Murcia, España</li>
+            <li data-i18n="education.dawDate">09/2024 – Graduación prevista: 07/2026</li>
           </ul>
-        </div>
-      </article>
-         <article class="card section">
-        <div class="section-title" data-i18n="education.otherTitle">Otras Formaciones</div>
-        <div class="text">
-          <p data-i18n="education.soundDegree" data-i18n-type="innerHTML">-<strong>Grado Superior de Sonido</strong> </p>
+          <p data-i18n="education.sound" data-i18n-type="innerHTML" style="margin-top:16px"><strong>Grado Superior en Sonido</strong></p>
           <ul>
-            <li data-i18n="education.center">Centro: CESUR.</li>
-            <li data-i18n="education.soundDuration">Duración: 2019 - 2021 (2º curso).</li>
-            <li data-i18n="education.webProgramming">Programación web en entorno cliente y servidor.</li>
+            <li data-i18n="education.soundCenter">Cesur — Murcia, España</li>
+            <li data-i18n="education.soundDate">09/2019 – 06/2021</li>
           </ul>
-          <p data-i18n="education.mediaDegree" data-i18n-type="innerHTML">-<strong>Grado Medio en Imagen y Sonido</strong> </p>
-           <ul>
-            <li data-i18n="education.center">Centro: CESUR.</li>
-            <li data-i18n="education.mediaDuration">Duración: 2017 - 2019 (2º curso).</li>
-            <li data-i18n="education.webProgramming">Programación web en entorno cliente y servidor.</li>
-          </ul>
-          
         </div>
       </article>
 

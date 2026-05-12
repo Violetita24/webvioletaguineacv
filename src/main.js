@@ -1,15 +1,17 @@
 import { getLocaleValue } from "./locales.js";
+import { renderHeaderInner } from "./headerInner.js";
 import { initLanguageMenu } from "./languageMenu.js";
 
 let coverTypewriterRun = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
+  renderHeaderInner();
+
   initLanguageMenu({
     onLocaleChange: restartCoverTypewriter,
   });
 
   restartCoverTypewriter();
-  initTopMenu();
 });
 
 function restartCoverTypewriter() {
@@ -34,15 +36,4 @@ function restartCoverTypewriter() {
   }
 
   typeText();
-}
-
-function initTopMenu() {
-  const toggle = document.querySelector(".top-toggle");
-  const panel = document.querySelector(".top-panel");
-
-  if (toggle && panel) {
-    toggle.addEventListener("click", function () {
-      panel.classList.toggle("is-open");
-    });
-  }
 }

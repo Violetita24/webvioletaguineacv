@@ -16,23 +16,6 @@
 </head>
 <body data-page="skills">
 
-<div class="site-locale-switch">
-  <button
-    id="language-toggle"
-    type="button"
-    class="site-locale-trigger"
-    aria-haspopup="menu"
-    aria-expanded="false"
-    aria-label="Seleccionar idioma"
-  >
-    <img src="/assets/icon-world.svg" alt="" class="site-locale-icon" aria-hidden="true">
-    <span class="site-locale-divider" aria-hidden="true">|</span>
-    <span id="language-current-label" class="site-locale-current">Spain</span>
-  </button>
-
-  <div id="language-menu" class="site-locale-menu hidden" role="menu"></div>
-</div>
-
 <div class="app">
 
   <!-- HEADER -->
@@ -50,10 +33,6 @@
 
     <!-- Menú superpuesto encima del banner -->
     <nav class="top-nav" aria-label="Navegación de secciones" data-i18n-aria-label="common.navLabel">
-      <button class="top-toggle" type="button">
-        <span class="top-toggle-icon">+</span>
-      </button>
-
       <div class="top-panel">
         <!-- En ABOUT: "Quién soy" es la activa -->
         <a class="side-item" href="about.html"><span class="side-label" data-i18n="common.about">Quién soy</span></a>
@@ -74,43 +53,38 @@
     <!-- CONTENIDO -->
     <section class="content">
 
-      <!-- BLOQUE SUPERIOR PERFIL -->
-      <article class="card profile-top" aria-labelledby="perfilTitle">
-        <div class="profile-meta">
-          <div class="profile-name" id="perfilTitle">Violeta Guinea</div>
-          <div class="profile-role muted" data-i18n="common.role">Desarrollo de Aplicaciones Web · Estudiante de 2º DAW</div>
-          <div style="height:8px"></div>
-          <div class="text" data-i18n="common.profileIntro" data-i18n-type="innerHTML">
-            Soy estudiante de <strong>Desarrollo de Aplicaciones Web</strong>, con
-            conocimientos en HTML, CSS, JavaScript (frontend) y PHP/Java y bases de datos (backend).
-            Me gusta el código bien estructurado y el diseño pensado para el usuario.
-          </div>
-        </div>
-      </article>
-
       <!-- SKILLS -->
-      <article class="card section" id="sec-skills">
+      <article class="card section skills-card" id="sec-skills">
         <div class="section-title" data-i18n="skills.title">Skills</div>
         <div class="text">
-          <p data-i18n="skills.intro">Estas son algunas de las tecnologías y herramientas que manejo:</p>
-
-          <div class="pill-row">
-            <span class="pill">HTML5</span>
-            <span class="pill">CSS3</span>
-            <span class="pill">Flexbox / Grid</span>
+          
+          <div class="pill-row skills-cloud" aria-label="Tecnologías y herramientas">
+            <div class="skills-core" aria-hidden="true">
+              <img src="/assets/development-icon.svg" alt="">
+            </div>
+            <span class="pill">Responsive Web Design</span>
+            <span class="pill">Front-end / Back-end Development</span>
+            <span class="pill">REST API Development</span>
+            <span class="pill">Git &amp; GitHub Workflow</span>
+            <span class="pill">Pull Requests &amp; Code Review</span>
+            <span class="pill">Component-Based Architecture</span>
             <span class="pill">JavaScript</span>
-            <span class="pill">PHP</span>
-            <span class="pill">Java</span>
+            <span class="pill">HTML5 &amp; CSS3</span>
+            <span class="pill">Team Collaboration</span>
             <span class="pill">MySQL</span>
-            <span class="pill">Oracle</span>
-            <span class="pill">Git / GitHub</span>
             <span class="pill">SCRUM</span>
           </div>
 
-          <p style="margin-top:10px" data-i18n="skills.english" data-i18n-type="innerHTML">
-            <strong>Inglés</strong>  intermedio (B1/B2). En camino a sacarme titulación oficial B2
-            Además: organización, trabajo en equipo, interés por buenas prácticas y testing básico.
-          </p>
+        </div>
+      </article>
+
+      <article class="card section">
+        <div class="section-title" data-i18n="skills.qualificationTitle">Cualificaciones</div>
+        <div class="text">
+          <ul>
+            <li data-i18n="skills.driving">Carnet de conducir B.</li>
+            <li data-i18n="skills.englishCertification">Certificación de inglés en proceso.</li>
+          </ul>
         </div>
       </article>
 
