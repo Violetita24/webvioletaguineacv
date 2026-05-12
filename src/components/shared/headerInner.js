@@ -17,7 +17,7 @@ function renderLocaleSwitch() {
       aria-expanded="false"
       aria-label="Seleccionar idioma"
     >
-      <img src="./assets/icon-world.svg"
+      <img src="/assets/icon-world.svg"
            alt=""
            class="site-locale-icon"
            aria-hidden="true">
